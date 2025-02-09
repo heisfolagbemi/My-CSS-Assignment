@@ -1,0 +1,45 @@
+
+body{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: #b8abff;
+    transform: translate(-50%,-50%);
+}
+.novus{
+    width: 400px;
+    height: 70px;
+
+}
+img{
+    width: 400px;
+    height: 200px;
+}
+.watch{
+    background-color: rgb(255, 255, 255);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.improved{
+    background-color: rgb(238, 208, 127) ;
+    width: 180px;
+    height: 20px;
+    padding: 0px 0px 28px 20px;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    border-radius: 0px 30px 30px 0px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.novus-watch{
+    padding-left: 15px;
+}
+
+@media screen and (min-width:600px) {
+    body{
+        
+    }
+}

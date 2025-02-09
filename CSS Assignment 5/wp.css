@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left {
+    flex: 2;
+    padding: 30px;
+}
+
+.right {
+    flex: 1;
+    background: #007bff;
+    color: white;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.card-input {
+    display: flex;
+    gap: 10px;
+}
+
+.card-input input {
+    flex: 1;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #146c43;
+}
+
+.help {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.right h2 {
+    font-size: 26px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.features p::before {
+    content: "✔";
+    margin-right: 8px;
+}
+
+.testimonial {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right {
+        padding: 20px;
+    }
+}
