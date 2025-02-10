@@ -38,14 +38,14 @@ body {
     color: #009966;
 }
 
-#content-area {
+#content-section {
     min-height: 100vh;
     padding-top: 1px;
     overflow: hidden;
     background-color: #666666;
 }
 
-#info-card {
+#info-section {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -73,13 +73,13 @@ body {
     line-height: 28.8px;
 }
 
-.card-body {
+.card-inner {
     padding: 16px;
     font-size: 16px;
     line-height: 1.6;
 }
 
-.card-body>p {
+.card-inner>p {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -111,14 +111,14 @@ body {
         white-space: pre;
     }
 
-    #content-area {
+    #content-section {
         background-color: #666666;
         padding: 32px 0px;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    #info-card {
+    #info-section {
         margin: 32px 0px;
         padding: 24px 0px;
         border-radius: 10px;
@@ -131,7 +131,7 @@ body {
         width: 60%;
     }
 
-    .card-body {
+    .card-inner {
         padding: 16px;
         max-height: none;
         font-size: 18px;
@@ -172,7 +172,7 @@ body {
     }
 
 
-    #info-card {
+    #info-section {
         max-width: 800px;
         margin: 40px auto;
         padding: 32px 0px;
@@ -190,7 +190,7 @@ body {
         padding: 24px;
     }
 
-    .card-body {
+    .card-inner {
         padding: 24px;
         max-height: none;
         overflow-y: auto;
@@ -198,7 +198,7 @@ body {
         line-height: 1.8;
     }
 
-    .card-body>p {
+    .card-inner>p {
         margin-bottom: 20px;
     }
 
