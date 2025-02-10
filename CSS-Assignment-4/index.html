@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+  </head>
+  <body>
+    <div class="left">
+      <div class="left-child">
+        <img src="./Asset/Logo.png" alt="Logo" width="77.3px" height="80px" />
+      </div>
+      <div class="left-child"><h1>For Individuals</h1></div>
+      <div class="left-child">
+        <p>
+          Start benefiting from wellness. For companies looking to increase
+          productivity and improve organizational wellness.
+        </p>
+      </div>
+    </div>
+    <form class="form" action="/submit">
+      <div class="form-child">
+        <label for="fname">
+          First Name
+          <input
+            type="text"
+            id="fname"
+            placeholder="First Name"
+            required
+            autocomplete="given-name"
+          />
+        </label>
+      </div>
+      <div class="form-child">
+        <label for="lname">
+          Last Name
+          <input
+            type="text"
+            id="lname"
+            placeholder="Last Name"
+            required
+            autocomplete="family-name"
+          />
+        </label>
+      </div>
+      <div class="form-child">
+        <label for="gender">
+          Gender (SEX)
+          <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="none">None</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-child">
+        <label for="dob">
+          Date of Birth
+          <input type="date" id="dob" required />
+        </label>
+      </div>
+      <div class="form-child">
+        <label for="weight">
+          Weight (KG)
+          <input type="text" id="weight" placeholder="Enter Weight" required />
+        </label>
+      </div>
+      <div class="form-child">
+        <label for="height">
+          Height (CM)
+          <input type="text" id="height" placeholder="Enter Height" required />
+        </label>
+      </div>
+      <div class="form-child item7">
+        <label for="Activity">
+          Activity Level
+          <select name="Activity" id="Activity" class="input-one">
+            <option value="">Select Here</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-child item8">
+        <label for="password">
+          Password
+          <input
+            class="input-one"
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+          />
+        </label>
+        <button type="button" class="password-toggle" onclick="togglePassword()">
+          👁️
+        </button>
+      </div>
+      <div class="form-child item10">
+        <button class="Register" type="submit">Register</button>
+      </div>
+      <div class="form-child item9">
+        <p class="Terms-con">
+          By clicking Register, you agree to our
+          <a href="">Terms of Use</a> and our <a href="">Privacy Policy</a>.
+        </p>
+      </div>
+    </form>
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
