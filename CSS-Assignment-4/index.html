@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./form.css" />
   </head>
   <body>
     <div class="left">
@@ -13,9 +13,13 @@
       </div>
       <div class="left-child"><h1>For Individuals</h1></div>
       <div class="left-child">
-        <p>
+        <p class="desktop-content">
           Start benefiting from wellness. For companies looking to increase
           productivity and improve organizational wellness.
+        </p>
+        <p class="mobile-content">
+          inspiring wholesome harmony for the mind, body, spirit, for everybody,
+          everywhere
         </p>
       </div>
     </div>
@@ -26,7 +30,7 @@
           <input
             type="text"
             id="fname"
-            placeholder="First Name"
+            placeholder="Fola"
             required
             autocomplete="given-name"
           />
@@ -90,10 +94,8 @@
             placeholder="Enter Password"
             required
           />
+          <span class="password-toggle" onclick="togglePassword()"> 👁️ </span>
         </label>
-        <button type="button" class="password-toggle" onclick="togglePassword()">
-          👁️
-        </button>
       </div>
       <div class="form-child item10">
         <button class="Register" type="submit">Register</button>
