@@ -132,9 +132,7 @@ span{
 .name-fields input {
     flex: 1;
 }
-p{
-    
-}
+
 .card-input {
     display: flex;
     gap: 10px;
