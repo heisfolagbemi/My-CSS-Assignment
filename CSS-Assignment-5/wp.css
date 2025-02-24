@@ -240,7 +240,12 @@ sub{
 }
 
 .copyright{
-    outline: black;
+    text-align: center;
+    margin: 20px;
+    size: 16px;
+}
+.copyright a{
+    color: rgb(59, 161, 186);
 }
 
 @media (max-width: 768px) {
