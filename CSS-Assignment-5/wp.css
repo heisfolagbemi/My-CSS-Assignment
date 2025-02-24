@@ -1,16 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: lato, sans-serif;
+    /* background-color: red; */
 }
-
-body {
+/* @font-face {
+    font-family: Mycustomfont;
+    src: url(./Asset/Lato/Lato-Bold.ttf);
+} */
+.nav-containner{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(216, 210, 210);
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+.logo{
+    width: 200px;
+    height: 39px;
+}
+.links{
+    display: flex;
+    column-gap: 40px;
+}
+[href]{
+    text-decoration: none;
+    font-family: lato sans-serif;
+    font-weight: 700;
+    line-height: 16.8px;
+    size: 14px;
+    color: black;
+    padding: 10px;
+}
+ a:focus{
+    border: 2px solid rgb(125, 125, 125);
+    border-radius: 5px; 
+}
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #f8f9fa;
+    height: 120vh;
+    background: #ffffff;
 }
 
 .container {
@@ -30,25 +70,33 @@ body {
 
 .right {
     flex: 1;
-    background: #007bff;
+    background: #1179BF;
     color: white;
-    padding: 30px;
+    padding: 40px;
+    
 }
 
 h2 {
     margin-bottom: 20px;
     font-size: 22px;
 }
+.check{
+    text-shadow: 0px 4px #cbcdd0;
+    /* color: #1D2C3C; */
+}
 
 .section {
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     border-bottom: 1px solid #ddd;
 }
-
 .section h3 {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.section h3 ::before {
+    content: 31;
 }
 
 label {
@@ -61,9 +109,19 @@ label {
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    outline: none;
+    background-color: #EDEFF2;
+}
+span{   
+    size: 28px;
+    font-weight: 700;
+
+}
+.one{
+    color: #548BC5;
 }
 
 .name-fields {
@@ -74,7 +132,9 @@ input {
 .name-fields input {
     flex: 1;
 }
-
+p{
+    
+}
 .card-input {
     display: flex;
     gap: 10px;
@@ -87,7 +147,7 @@ input {
 .btn {
     width: 100%;
     padding: 12px;
-    background: #198754;
+    background: #038E7D;
     color: white;
     border: none;
     border-radius: 5px;
@@ -108,32 +168,79 @@ input {
 
 .right h2 {
     font-size: 26px;
+    font-family: lato sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    size: 20px;
 }
 
 .price {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 80px;
+    font-weight: 10;
+    line-height: 72px;
+    font-family: lato sans-serif;
+    margin-bottom: 0px;
 }
 
 .features {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+sup{
+    font-size: 24px;
+    font-weight: 700;
+}
+sub{
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.features p {
+
+.features .item {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
+.icon{
+    font-size: 20px;
+    color: #B9F5FF;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+}
+.footer{
+    margin-left: 200px;
+}
 
-.features p::before {
+/* .features p::before {
     content: "✔";
     margin-right: 8px;
+} */
+.offer p{
+    margin-top: 20px;
+}
+.Switch{
+    padding: 0px;
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: #B9F5FF;
+
 }
 
 .testimonial {
     margin-top: 20px;
     font-size: 14px;
     font-style: italic;
+}
+.Kirk{
+    width: 40px;
+    height: 40px;
+}
+
+.copyright{
+    outline: black;
 }
 
 @media (max-width: 768px) {
